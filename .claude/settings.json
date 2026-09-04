@@ -1,0 +1,13 @@
+{
+  "enabledMcpjsonServers": ["filesystem"],
+  "permissions": {
+    "allow": [
+      "Read"
+    ],
+    "deny": [      
+      "Glob",
+      "Edit(.)",
+      "Write(.)"
+    ]
+  }
+}
