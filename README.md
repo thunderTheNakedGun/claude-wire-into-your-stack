@@ -74,8 +74,8 @@ In a short `NOTES.md`, answer in a few sentences each:
 - [x] a project skill exists in `.claude/skills/`, with a description that triggers on the right request, and you confirmed it fires
 - [x] a custom command exists in `.claude/commands/` and runs the way you intended
 - [x] a hook is set at project scope (committed `.claude/settings.json`) and fires on its event
-- [ ] one task run headless with a scoped `--allowedTools`
-- [ ] `NOTES.md` committed, explaining each choice
+- [x] one task run headless with a scoped `--allowedTools`
+- [x] `NOTES.md` committed, explaining each choice
 
 ### Submit
  
