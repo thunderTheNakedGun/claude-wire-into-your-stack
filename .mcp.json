@@ -6,7 +6,7 @@
       "args": [
         "-y",
         "@modelcontextprotocol/server-filesystem",
-        "c:\\Users\\balazsradvanyi\\Kodok\\Claude\\claude-wire-into-your-stack\\SecretsTheyDontWantYouToKnow"
+        "./SecretsTheyDontWantYouToKnow"
       ],
       "env": {}
     }
