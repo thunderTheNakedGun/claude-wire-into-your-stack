@@ -1,6 +1,6 @@
 ---
 description: Verify the Definition of Done checklist in README.md against the actual repo state, and update the checkboxes to match
-allowed-tools: Read, Glob, Grep, Edit(README.md), Bash(git status *), Bash(git log *)
+allowed-tools: Read, Grep, Edit(README.md), Bash(git status *), Bash(git log *)
 ---
 
 Read the "### Definition of done" checklist in README.md — treat its current wording as the source of truth for what "done" means, since it can change over time. Do not hardcode or assume what the items are; read them fresh each time.
