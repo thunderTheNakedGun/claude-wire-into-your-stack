@@ -44,7 +44,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "OUTPUT=$(npm run lint 2>&1); CODE=$?; if [ $CODE -ne 0 ]; then printf '%s' \"$OUTPUT\" | node -e 'let d=\"\";process.stdin.on(\"data\",c=>d+=c);process.stdin.on(\"end\",()=>{console.log(JSON.stringify({decision:\"block\",reason:\"Lint failed:\\n\"+d}))});'; fi",
+            "command": "OUTPUT=$(npm run lint 2>&1); CODE=$?; if [ $CODE -ne 0 ]; then printf '%s' \"$OUTPUT\" | node -e 'let d=\"\";process.stdin.on(\"data\",c=>d+=c);process.stdin.on(\"end\",()=>{console.log(JSON.stringify({hookSpecificOutput:{hookEventName:\"PostToolUse\",additionalContext:\"Lint failed:\\n\"+d,systemMessage:\"Linting checks failed\"}}))});'; fi",
             "timeout": 30,
             "statusMessage": "Running npm run lint..."
           }
